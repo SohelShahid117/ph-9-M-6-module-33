@@ -38,9 +38,15 @@ function loadUsers() {
 //33-5 Dynamically Display Loaded Data On Your Website
 function displayUser(datum) {
     // console.log(datum)
+    const usersList = document.getElementById('users-list');
     for (user of datum) {
-        console.log(user)
+        // console.log(user)
+        // console.log(user.name)
+        // console.log(user.email)
+        const li = document.createElement('li');
+        li.innerText = user.name;
+        usersList.appendChild(li);
     }
 }
 
-start from 33 - 5: 5min
+// start from 33 - 5: 5min

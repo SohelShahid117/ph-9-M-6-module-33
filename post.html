@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>33-6:Post</title>
+    <style>
+        .post-div {
+            background-color: aquamarine;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 33-6 Load Posts And Display On The Website With CSS -->
+    <header>
+        <h1>Display all post</h1>
+    </header>
+    <main>
+        <button onclick="loadPost()">Load Post</button>
+        <section>
+            <h1>All posts</h1>
+            <div id="post-container">
+            </div>
+        </section>
+
+    </main>
+    <button onclick="createApost()">Create A Post</button>
+    <button onclick="deleteApost()">Delete A Post</button>
+    <button onclick="patchApost()">Patch/Update A Post</button>
+
+
+    <script src="./post.js"></script>
+</body>
+
+</html>
